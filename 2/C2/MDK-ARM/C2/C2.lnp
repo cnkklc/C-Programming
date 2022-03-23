@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"c2\startup_stm32f407xx.o"
+"c2\main.o"
+"c2\stm32f4xx_it.o"
+"c2\stm32f4xx_hal_msp.o"
+"c2\stm32f4xx_hal_tim.o"
+"c2\stm32f4xx_hal_tim_ex.o"
+"c2\stm32f4xx_hal_rcc.o"
+"c2\stm32f4xx_hal_rcc_ex.o"
+"c2\stm32f4xx_hal_flash.o"
+"c2\stm32f4xx_hal_flash_ex.o"
+"c2\stm32f4xx_hal_flash_ramfunc.o"
+"c2\stm32f4xx_hal_gpio.o"
+"c2\stm32f4xx_hal_dma_ex.o"
+"c2\stm32f4xx_hal_dma.o"
+"c2\stm32f4xx_hal_pwr.o"
+"c2\stm32f4xx_hal_pwr_ex.o"
+"c2\stm32f4xx_hal_cortex.o"
+"c2\stm32f4xx_hal.o"
+"c2\stm32f4xx_hal_exti.o"
+"c2\system_stm32f4xx.o"
+"c2\header.o"
+"c2\header_1.o"
+--strict --scatter "C2\C2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "C2.map" -o C2\C2.axf
