@@ -212,7 +212,8 @@ void TIM4_IRQHandler(void)
   HAL_TIM_IRQHandler(&htim4);
   /* USER CODE BEGIN TIM4_IRQn 1 */
 	calculate_va(&HC.VAA);
-	h_1_f(&HC);
+	//h_1_f(&HC);
+	HAL_GPIO_TogglePin(GPIOD,GPIO_PIN_All);
   /* USER CODE END TIM4_IRQn 1 */
 }
 
